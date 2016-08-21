@@ -8,9 +8,7 @@ var errorHandler = require('express-error-handler')
 var employees = require('./routes/employee');
 var app = express();
 
-console.log('Hello World ');
-
-app.set('port', 4050);
+app.set('port', process.env.PORT || 4050);
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(bodyParser.json());
