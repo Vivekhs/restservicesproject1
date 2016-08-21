@@ -7,4 +7,7 @@ EMAIL_ID varchar(150),
 OFFICE_LOCATION varchar(100)
 
 );
+<<<<<<< HEAD
 ALTER TABLE EMPLOYEE ADD CONSTRAINT constraintname UNIQUE (EMP_ID);
+=======
+>>>>>>> e76993758574b2367f3bd5fd0ea938c16ed0eb84

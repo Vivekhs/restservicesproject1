@@ -37,5 +37,8 @@ function searchEmployee(id,callback){
 module.exports = {
   getEmpDetails:getEmpDetails,
   searchEmployee:searchEmployee
-};
+  });
+}
+
+
 
