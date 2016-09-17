@@ -6,6 +6,7 @@ var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
 var errorHandler = require('express-error-handler')
 var employees = require('./routes/employee');
+var notification = require('./routes/notification');
 var app = express();
 
 app.set('port', process.env.PORT || 4050);
@@ -28,6 +29,7 @@ if ('development' == app.get('env')) {
 }
 
 app.use('/employee', employees);
+app.use('/notification', notification);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Server is listening on port ' + app.get('port'));
